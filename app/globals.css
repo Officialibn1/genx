@@ -9,7 +9,7 @@ body {
 
 /* Navbar styles */
 nav {
-  @apply flex justify-between items-center py-4 w-full outline px-[5vw] md:px-0;
+  @apply flex justify-between items-center py-4 w-full px-[5vw] 2xl:px-0;
 }
 
 /* largescreen navlinks */
@@ -47,8 +47,15 @@ nav {
 
 /* user and cart icons */
 .cartUser {
-  @apply flex justify-end items-center text-3xl gap-4; 
+  @apply flex justify-end items-center text-2xl gap-4; 
   flex: 1;
 }
 
+
+/* Ulility Classes */
+
+/* Section Title */
+.sectionTitle {
+  @apply py-6 text-2xl font-light;
+}
 
