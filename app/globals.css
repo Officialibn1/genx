@@ -2,26 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply max-w-screen-2xl mx-auto text-slate-800 bg-stone-200;
 }
+
+/* Navbar styles */
+nav {
+  @apply flex justify-between items-center py-4 w-full outline px-[5vw] md:px-0;
+}
+
+/* largescreen navlinks */
+.navLinks {
+  @apply hidden md:block;
+  flex: 1;
+}
+
+/* largescreen navlinks */
+.navLinks ul {
+  @apply flex gap-4 text-base font-normal ;
+
+}
+
+/* logo container */
+.navLogo {
+  @apply md:justify-center items-center flex text-sky-900;
+  flex: 1;
+}
+
+/* logo link wrapper */
+.navLogo a {
+  @apply flex items-center gap-2
+}
+
+/* logo icon */
+.navLogo a svg {
+  @apply text-4xl;
+}
+
+/* logo text */
+.navLogo a span {
+  @apply text-2xl font-extralight
+}
+
+/* user and cart icons */
+.cartUser {
+  @apply flex justify-end items-center text-3xl gap-4; 
+  flex: 1;
+}
+
+

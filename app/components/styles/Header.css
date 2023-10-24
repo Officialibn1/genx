@@ -1,0 +1,23 @@
+header {
+    @apply w-full flex flex-col px-[5vw] py-10 outline justify-center text-center;
+    /* background-image: ; */
+}
+
+header h1 {
+    @apply text-3xl mb-10
+}
+
+header p {
+    @apply text-sm font-light mb-8;
+}
+
+header .headerLinks {
+    @apply flex gap-4 justify-center
+}
+
+header .headerLinks a {
+    border: 2px solid;
+    border-radius: .5rem;
+    @apply outline-slate-800 px-4 py-2 md:hover:bg-slate-800 md:hover:text-stone-200;
+}
+
