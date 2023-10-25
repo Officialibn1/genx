@@ -33,7 +33,7 @@ const NewArivals = async () => {
         </div>
 
         <div className="cardContainer">
-            {items?.map(item => (
+            {items?.slice(0, 3).map(item => (
                 <Link key={item.id} href={`/categories/${item.category}/${item.id}`} className='productCard' >
                     <div>
                         <div className="productCardImage">

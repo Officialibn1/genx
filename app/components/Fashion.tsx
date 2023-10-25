@@ -1,12 +1,11 @@
-import React from 'react'
-import './styles/TopSelling.css'
-import Link from 'next/link'
-import Image from 'next/image'
 import { item } from '@/typings'
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
 
 const fetchItems = async () => {
     try {
-        const res = await fetch(`https://dummyjson.com/products/category/fragrances`, {
+        const res = await fetch(`https://dummyjson.com/products/category/mens-shirts`, {
             next: {
                 revalidate: 60 * 60
             }
@@ -14,33 +13,33 @@ const fetchItems = async () => {
 
         const data = await res.json()
 
-        const items: item[] = await data.products
+        const items: item[] = data.products
 
-        // console.log(items);
-        
         return items
     } catch (error) {
-        console.error('failed to fetch data', error);
-        
+        console.error('Failed to fetch data', error);        
     }
 }
 
-const TopSelling = async () => {
 
+const Fashion = async () => {
     const items = await fetchItems()
 
-  return (
+
+    return (
     <section className='topSelling'>
         <div className="sectionTitle">
-            <h1>Top Selling</h1>
+            <h1>
+                Fashion
+            </h1>
         </div>
 
         <div className="cardContainer">
-            {items?.slice(0, 4).map(item => (
+            {items?.slice(0, 3).map(item => (
                 <Link key={item.id} href={`/categories/${item.category}/${item.id}`} className='productCard' >
                     <div>
                         <div className="productCardImage">
-                            <Image src={item.images[1]} width={300} height={300}  alt={item.title} />
+                            <Image src={item.images[0]} width={400} height={400}  alt={item.title} />
                         </div>
 
                         <div className="productCardDesc">
@@ -69,4 +68,4 @@ const TopSelling = async () => {
   )
 }
 
-export default TopSelling
+export default Fashion
