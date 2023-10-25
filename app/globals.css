@@ -71,3 +71,49 @@ nav {
   @apply py-6 text-4xl font-light mb-10;
 }
 
+/* Container div that wraps all product item card */
+.cardContainer {
+  @apply flex flex-col items-center md:items-start md:flex-row flex-wrap gap-8 justify-center;
+}
+
+/* individual card styles */
+.productCard {
+  @apply w-full max-w-[322.5px];
+  /* border-radius: .5rem; */
+}
+
+.productCard > div {
+  @apply w-full flex flex-col relative;
+}
+
+.productCardImage {
+  @apply w-full h-[225px];
+  border-radius: 1.5rem;
+  overflow: hidden;
+  border: 1px solid rgb(30, 41, 59);
+}
+
+.productCardImage img {
+  @apply w-full h-full;
+}
+
+.productCardDesc {
+  @apply w-full flex flex-col p-4;
+}
+
+.productCardDesc h1 {
+  @apply text-xl mb-4;
+}
+
+.productCardDesc h2 {
+  @apply text-sm font-light mb-2;
+}
+
+.productCardDesc h3 {
+  @apply text-base font-semibold;
+}
+
+.discount {
+  @apply absolute bg-green-300 py-1 px-2 top-5 left-5 text-sm font-light;
+  border-radius: 1.5rem;
+}
