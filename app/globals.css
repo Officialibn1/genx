@@ -51,11 +51,23 @@ nav {
   flex: 1;
 }
 
+/* not found page */
+.notFound {
+  @apply flex items-center justify-center text-center px-[5vw] py-16;
+}
+
+.notFound h1 {
+  @apply text-2xl text-center;
+}
+
+.notFound h1 a {
+  @apply text-green-400 mt-6 md:hover:text-green-200;
+}
 
 /* Ulility Classes */
 
 /* Section Title */
 .sectionTitle {
-  @apply py-6 text-2xl font-light;
+  @apply py-6 text-4xl font-light mb-10;
 }
 

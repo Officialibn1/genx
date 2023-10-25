@@ -1,0 +1,12 @@
+.categories {
+    @apply px-[5vw] py-10;
+}
+
+.categoriesContainer {
+    @apply flex flex-wrap gap-4 justify-center;
+}
+
+.categoriesCard {
+    @apply px-8 py-4 bg-slate-800 text-stone-200 md:hover:bg-slate-700;
+    border-radius: .5rem;
+}
