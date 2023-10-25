@@ -1,4 +1,4 @@
-import { CategoriesType } from '@/typings';
+// import { CategoriesType } from '@/typings';
 import React from 'react'
 import './styles/Categories.css'
 import Link from 'next/link';
@@ -23,7 +23,7 @@ const fetchCategories =  async () => {
 
 const Categories = async () => {
 
-    const categories = await fetchCategories()
+    const categories = ['laptops', 'fragrances']
 
   return (
     <section className='categories'>
@@ -32,7 +32,7 @@ const Categories = async () => {
         </div>
 
         <div className="categoriesContainer">
-            {categories?.slice(0, 6).map((cat: string, i: string) => (
+            {categories.map((cat: string, i: number) => (
                 <Link href={`/categories/${cat}`} key={i} className="categoriesCard" >
                     <h1>
                         {cat}

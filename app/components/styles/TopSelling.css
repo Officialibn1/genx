@@ -1,0 +1,3 @@
+.topSelling {
+    @apply px-[5vw] py-10 2xl:px-0;
+}

@@ -26,13 +26,13 @@ nav {
 
 /* logo container */
 .navLogo {
-  @apply md:justify-center items-center flex text-sky-900;
+  @apply md:justify-center items-center flex;
   flex: 1;
 }
 
 /* logo link wrapper */
 .navLogo a {
-  @apply flex items-center gap-2
+  @apply flex items-center gap-2 md:hover:text-slate-700;
 }
 
 /* logo icon */
@@ -78,9 +78,10 @@ nav {
 
 /* individual card styles */
 .productCard {
-  @apply w-full max-w-[322.5px];
-  /* border-radius: .5rem; */
+  @apply w-full max-w-[322.5px] md:hover:bg-stone-100 ;
+  border-radius: 1.5rem;
 }
+
 
 .productCard > div {
   @apply w-full flex flex-col relative;
