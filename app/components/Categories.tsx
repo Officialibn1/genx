@@ -23,7 +23,7 @@ const fetchCategories =  async () => {
 
 const Categories = async () => {
 
-    const categories = ['laptops', 'fragrances']
+    const categories = ['laptops', 'fragrances', 'mens-shirts', 'sunglasses', 'tops']
 
   return (
     <section className='categories'>

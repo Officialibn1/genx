@@ -82,11 +82,12 @@ nav {
   border-radius: 1.5rem;
 }
 
-
+/* Product card innder div */
 .productCard > div {
   @apply w-full flex flex-col relative;
 }
 
+/* product card image container */
 .productCardImage {
   @apply w-full h-[225px];
   border-radius: 1.5rem;
@@ -94,10 +95,12 @@ nav {
   border: 1px solid rgb(30, 41, 59);
 }
 
+/* product card image */
 .productCardImage img {
   @apply w-full h-full;
 }
 
+/* Product card details */
 .productCardDesc {
   @apply w-full flex flex-col p-4;
 }
@@ -118,3 +121,55 @@ nav {
   @apply absolute bg-green-300 py-1 px-2 top-5 left-5 text-sm font-light;
   border-radius: 1.5rem;
 }
+
+/* Footer Styles */
+footer {
+  @apply bg-slate-800 px-[5vw] py-10 text-slate-200 flex flex-col md:flex-row;
+}
+
+.logoSocials {
+  @apply flex flex-col w-full items-center mb-14 md:w-[35%];
+}
+
+.logoSocials .logo a {
+  @apply flex items-center gap-2 text-5xl;
+}
+
+.logoSocials .logo a span {
+  @apply text-3xl font-thin;
+}
+
+.logoSocials .socials {
+  @apply flex gap-4 mt-5;
+}
+
+.logoSocials .socials svg {
+  @apply text-3xl;
+}
+
+footer .links {
+  @apply flex justify-between md:w-[65%] lg:justify-end lg:gap-20;
+}
+
+footer .links ul {
+  @apply flex flex-col gap-3;
+}
+
+footer .links ul li {
+  @apply font-thin text-sm;
+}
+
+footer .links ul li:first-child{
+  @apply mb-7 font-bold text-xl;
+}
+
+footer .links ul li a {
+  @apply md:hover:font-light;
+}
+
+
+
+
+
+
+
