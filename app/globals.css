@@ -14,7 +14,7 @@ nav {
 
 /* largescreen navlinks */
 .navLinks {
-  @apply hidden md:block;
+  @apply hidden lg:block;
   flex: 1;
 }
 
@@ -26,7 +26,7 @@ nav {
 
 /* logo container */
 .navLogo {
-  @apply md:justify-center items-center flex;
+  @apply lg:justify-center items-center flex;
   flex: 1;
 }
 
@@ -76,13 +76,18 @@ nav {
   @apply flex flex-col items-center md:items-start md:flex-row flex-wrap gap-8 justify-center;
 }
 
+/* Title of each leaf page */
+.pageSectionTitle {
+  @apply w-full py-10 text-4xl text-center;
+}
+
 /* individual card styles */
 .productCard {
   @apply w-full max-w-[322.5px] md:hover:bg-stone-100 ;
   border-radius: 1.5rem;
 }
 
-/* Product card innder div */
+/* Product card inner div */
 .productCard > div {
   @apply w-full flex flex-col relative;
 }
@@ -121,6 +126,19 @@ nav {
   @apply absolute bg-green-300 py-1 px-2 top-5 left-5 text-sm font-light;
   border-radius: 1.5rem;
 }
+
+/* View All Products Button */ 
+.viewAll {
+  @apply w-full flex py-5 justify-center mb-20;
+}
+
+.viewAll a {
+  border-radius: .5rem;
+  @apply  px-5 py-3 bg-slate-800 text-slate-200 md:hover:bg-slate-700  text-base md:text-base xl:px-6 xl:py-4;
+  @apply xl:text-xl;
+}
+
+
 
 /* Footer Styles */
 footer {

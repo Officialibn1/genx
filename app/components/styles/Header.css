@@ -1,12 +1,12 @@
 header {
-    @apply w-full flex flex-col px-[5vw] py-10 justify-center text-center text-slate-800 md:h-[50vh];
+    @apply w-full flex flex-col px-[5vw] py-10 justify-center text-center text-slate-800 h-[60vh] md:h-[50vh];
     background-image: url('../../../public/genxbg.png');
     background-size: cover;
     background-position: center;
 }
 
 header h1 {
-    @apply text-4xl mb-10 font-semibold text-slate-900 md:text-6xl md:mb-[6rem];
+    @apply text-5xl mb-10 font-semibold text-slate-900 md:text-6xl md:mb-[6rem];
 }
 
 header p {
@@ -20,7 +20,7 @@ header .headerLinks {
 header .headerLinks a {
     /* border: 2px solid; */
     border-radius: .5rem;
-    @apply  px-3 py-2 bg-slate-800 text-slate-200 md:hover:bg-slate-700  text-sm md:text-base xl:px-6 xl:py-4;
+    @apply  px-5 py-4 bg-slate-800 text-slate-200 md:hover:bg-slate-700  text-base xl:px-6;
     @apply xl:text-xl;
 }
 
