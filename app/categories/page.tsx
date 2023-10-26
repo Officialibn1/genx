@@ -18,6 +18,7 @@ const fetchCategory = async (category: string) => {
 
         const items: item[] = await data.products
 
+        // return new Error
         return items
     } catch (error) {
         console.error('failed to fetch items', error);
