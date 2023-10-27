@@ -1,0 +1,89 @@
+/* Entire cart page container */
+.usersCart {
+    @apply flex flex-col gap-5 py-20 px-[5vw] lg:flex-row;
+}
+
+/* Container for all cart items */
+.cartItems {
+    @apply flex flex-col gap-5 max-h-[750px] overflow-y-auto;
+}
+
+/* Individual cart item styles */
+.cartItem {
+    @apply flex w-full h-32 gap-2 max-w-[425px] xl:min-w-[550px];
+}
+
+/* Cart item image conatiner */
+.cartItemImg {
+    @apply w-[40%] h-full overflow-hidden;
+    border-radius: .8rem;
+}
+
+/* cart item image */
+.cartItemImg img {
+    @apply w-full h-full;
+}
+
+/* Cart item details and buttons */
+.cartItemDesc {
+    @apply flex flex-col w-[60%];
+}
+
+/* cart item name */
+.cartItemDesc h1 {
+    @apply text-base mt-5 font-semibold;
+}
+
+/* cart item buttons */
+.cartItemBtns {
+    @apply flex mt-auto flex-row-reverse w-full items-center;
+}
+
+/* cart item quantity and buttons wrapper */
+.cartItemBtns .itemQuantity {
+    @apply flex gap-3 items-center mr-auto;
+}
+
+/* cart items quantity buttons */
+.cartItemBtns .itemQuantity button {
+    @apply w-8 h-8 flex bg-slate-800 text-slate-200 text-2xl font-extralight md:hover:bg-slate-700;
+    border-radius: .5rem;
+}
+
+/* cart items quantity buttons svg icon*/
+.cartItemBtns .itemQuantity button svg {
+    @apply m-auto;
+}
+
+/* cart item delete button */
+.cartItemBtns .deleteItem {
+    @apply w-10 h-10 flex text-2xl bg-red-500 text-slate-200;
+    border-radius: .5rem;
+}
+
+/* cart item delete button icon*/
+.cartItemBtns .deleteItem svg {
+    @apply m-auto;
+}
+
+/* cart items total details container*/
+.cartTotal {
+    @apply flex flex-col gap-5 lg:flex-1 max-w-[500px] ml-auto;
+}
+
+/* cart item  details title*/
+.cartTotal h1 {
+    @apply text-xl font-semibold flex;
+}
+
+/* cart item details value */
+.cartTotal h1 p {
+    @apply ml-auto text-base font-thin;
+}
+
+/* order items button */
+.cartTotal button {
+    @apply w-full bg-green-600 md:hover:bg-green-500 text-slate-200 py-3 text-xl;
+    border-radius: .8rem;
+    transition: all 250ms ease-in-out;
+}
