@@ -83,7 +83,7 @@
 
 /* order items button */
 .cartTotal button {
-    @apply w-full bg-green-600 md:hover:bg-green-500 text-slate-200 py-3 text-xl;
+    @apply w-full bg-green-900 md:hover:bg-green-700 text-slate-200 py-3 text-xl;
     border-radius: .8rem;
     transition: all 250ms ease-in-out;
 }
