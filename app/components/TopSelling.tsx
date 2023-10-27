@@ -3,6 +3,7 @@ import './styles/TopSelling.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import { item } from '@/typings'
+import { notFound } from 'next/navigation'
 
 const fetchItems = async () => {
     try {
@@ -29,6 +30,10 @@ const TopSelling = async () => {
 
     const items = await fetchItems()
 
+    if (!items) {
+        notFound()
+    }
+
   return (
     <section className='topSelling'>
         <div className="sectionTitle">
@@ -36,7 +41,7 @@ const TopSelling = async () => {
         </div>
 
         <div className="cardContainer">
-            {items?.slice(0, 4).map(item => (
+            {items.slice(0, 4).map(item => (
                 <Link key={item.id} href={`/categories/${item.category}/${item.id}`} className='productCard' >
                     <div>
                         <div className="productCardImage">

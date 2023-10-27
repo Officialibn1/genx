@@ -1,0 +1,65 @@
+.singleProductPage {
+    @apply px-[5vw] py-10 2xl:px-0;
+}
+
+.singleProductPage > div {
+    @apply flex flex-col lg:flex-row gap-4 max-w-[922px] mx-auto;
+}
+
+.productImage {
+    @apply w-full overflow-hidden;
+    border-radius: 1.5rem;
+}
+
+.productImage img {
+    @apply w-full;
+}
+
+.productDescription {
+    @apply flex flex-col gap-2 mt-5 font-light;
+}
+
+.productDescription span {
+    @apply font-semibold;
+}
+
+.productDescription h1 {
+    @apply text-2xl capitalize;
+}
+
+.productDescription h2 {
+    @apply text-lg capitalize;
+}
+
+.quantity {
+    @apply mt-5 flex items-center gap-2;
+}
+
+.quantity > p {
+    @apply text-2xl
+}
+
+.quantity button {
+    @apply w-10 h-10 flex bg-slate-800 text-slate-200 text-3xl font-extralight md:hover:bg-slate-700;
+    border-radius: .8rem; 
+}
+
+.quantity button svg {
+    @apply m-auto;
+}
+
+.addToCart {
+    @apply w-full flex mt-10;
+}
+
+.addToCart button {
+    @apply bg-green-900 text-slate-200 md:hover:bg-green-800 px-4 py-3;
+    border-radius: .8rem;
+}
+
+
+
+
+
+
+

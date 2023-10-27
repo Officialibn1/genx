@@ -10,7 +10,7 @@ const fetchCategory = async (category: string) => {
     try {
         const res = await fetch(`https://dummyjson.com/products/category/${category}`, {
             next: {
-                revalidate: 60 * 60
+                revalidate: 0
             }
         })
 
@@ -80,7 +80,7 @@ const CategoriesPage = async () => {
 
         {/* View All Laptops Link */}
         <div className="viewAll">
-            <Link href={`/catrgories/laptops`}>
+            <Link href={`/categories/laptops`}>
                 View All
             </Link>
         </div>
@@ -125,7 +125,7 @@ const CategoriesPage = async () => {
 
         {/* View All mens shirt Link */}
         <div className="viewAll">
-            <Link href={`/catrgories/mens-shirts`}>
+            <Link href={`/categories/mens-shirts`}>
                 View All
             </Link>
         </div>
@@ -170,7 +170,7 @@ const CategoriesPage = async () => {
 
         {/* View All sunglasses Link */}
         <div className="viewAll">
-            <Link href={`/catrgories/sunglasses`}>
+            <Link href={`/categories/sunglasses`}>
                 View All
             </Link>
         </div>

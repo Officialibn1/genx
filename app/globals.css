@@ -47,8 +47,12 @@ nav {
 
 /* user and cart icons */
 .cartUser {
-  @apply flex justify-end items-center text-2xl gap-4; 
+  @apply flex justify-end items-center text-2xl gap-6; 
   flex: 1;
+}
+
+.cartUser a {
+  @apply hover:text-slate-700;
 }
 
 /* not found page */
@@ -83,8 +87,9 @@ nav {
 
 /* individual card styles */
 .productCard {
-  @apply w-full max-w-[322.5px] md:hover:bg-stone-100 ;
+  @apply w-full max-w-[322.5px] hover:shadow-2xl;
   border-radius: 1.5rem;
+  transition: all 200ms ease-in-out;
 }
 
 /* Product card inner div */

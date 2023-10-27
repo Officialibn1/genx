@@ -7,7 +7,7 @@ const fetchItems = async (category: string) => {
     try {
         const res = await fetch(`https://dummyjson.com/products/category/${category}`, {
             next: {
-                revalidate: 60 * 60
+                revalidate: 60
             }
         })
 

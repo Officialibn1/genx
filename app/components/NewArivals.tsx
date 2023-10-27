@@ -3,12 +3,13 @@ import './styles/NewArivals.css'
 import { item } from '@/typings'
 import Link from 'next/link'
 import Image from 'next/image'
+import { notFound } from 'next/navigation'
 
 const fetchNew = async () => {
     try {
         const res = await fetch(`https://dummyjson.com/products/category/laptops`, {
             next: {
-                revalidate: 60 * 60 * 24
+                revalidate: 60
             }
         })
         
@@ -23,6 +24,10 @@ const fetchNew = async () => {
 const NewArivals = async () => {
 
     const data = await fetchNew()
+
+    if (!data) {
+        notFound()
+    }
 
     const items: item[] = data.products
 

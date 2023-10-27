@@ -4,22 +4,22 @@ import './styles/Categories.css'
 import Link from 'next/link';
 
 
-const fetchCategories =  async () => {
-    try {
-        const res = await fetch(`https://dummyjson.com/products/categories`, {
-            next: {
-             revalidate: 60 * 60 * 24
-            } 
-         })
+// const fetchCategories =  async () => {
+//     try {
+//         const res = await fetch(`https://dummyjson.com/products/categories`, {
+//             next: {
+//              revalidate: 
+//             } 
+//          })
      
-         const data = await res.json()
-        //  console.log(data, 'Fetched');
-         return data
-    } catch (error) {
-        console.error('Error fetching data', error);
+//          const data = await res.json()
+//         //  console.log(data, 'Fetched');
+//          return data
+//     } catch (error) {
+//         console.error('Error fetching data', error);
         
-    }
-}
+//     }
+// }
 
 const Categories = async () => {
 
